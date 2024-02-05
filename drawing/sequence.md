@@ -2,7 +2,7 @@
 sequenceDiagram
     participant Consumer as Consumidor
     participant Scheduler as Agendador (Quartz)
-    participant Job as Job (C#)
+    participant Job as Job (CSharp)
 
     Consumer->>Scheduler: Recebe evento (Topic, TopicGroup, Data, Headers)
     Scheduler->>Job: Agenda Job para 22h de segunda a quinta
